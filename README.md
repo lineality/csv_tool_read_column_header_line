@@ -32,7 +32,7 @@ on any computer or device where you can run
 a python script.
 
 ## Zipped Archives Handled
-if .csv files are in a zipped archive, the function will
-automatically find and unzip the archive and then handle each file.
+If .csv files are in a zipped archive, the script will
+automatically find and unzip the archive (and then read the first lines).
 
 
