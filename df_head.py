@@ -5,9 +5,12 @@
 # df_head.py
 
 This is a python script that reads 
-the first line of .csv files.
-e.g. 
-df_head.py mimics the pandas operation: df.head()
+the first lines of .csv files:
+- prints the column headers
+- prints the first row of data
+
+#### df_head.py mimics the pandas operation: df.head()
+
 
 ## Instruction Steps:
 
@@ -36,8 +39,7 @@ a python script.
 If .csv files are in a zipped archive, the script will
 automatically find and unzip the archive (and then read the first lines).
 
-
-v2 2022.08.04
+v3 2022.08.04
 """
 
 # import python packages and libraries 
@@ -76,6 +78,13 @@ def read_first_line(this_file):
         
     return first_line
 
+# helper function read_row_zero
+def read_row_zero(this_file):
+    with open( this_file ) as f:
+        first_line = f.readlines()[1].rstrip()
+        
+    return first_line
+
 # get files, get lines
 def print_file_first_lines():
 
@@ -87,7 +96,10 @@ def print_file_first_lines():
 
     # iterate through list of files; get first lines; print
     for i in file_list:
-      print( f"{i} -> {read_first_line(i)}" )
+      # Print Column Headers
+      print( f"{i} Header -> {read_first_line(i)}" )
+      # Print first row, row zero
+      print( f"{i}  row 0 -> {read_row_zero(i)}" )
 
       # print a new-line
       print("\n")
