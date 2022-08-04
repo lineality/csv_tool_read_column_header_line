@@ -1,6 +1,6 @@
 """
 ### csv_tool_read_column_header_line
-["Save link as" to download] https://raw.githubusercontent.com/lineality/csv_tool_read_column_header_line/main/df_head.py 
+"Save link as" to download: https://raw.githubusercontent.com/lineality/csv_tool_read_column_header_line/main/df_head.py 
 
 # df_head.py
 
@@ -27,14 +27,14 @@ should not require any additional environments,
 libraries, packages or set up. Just run in a folder 
 along with the .csv files.
 
-This method should work for larger files 
-(hundreds of megs or a few gigs in size)  
+This method should work for larger files, 
+(from hundreds of Megabytes (MB) or a few Gigabytes (GB) in size)  
 on any computer or device where you can run 
 a python script.
 
-## Zipped Archived Handled
-if .csv files are in a zipped archive, the function will
-automatically find and unzip the archive and then handle each file.
+## Zipped Archives Handled
+If .csv files are in a zipped archive, the script will
+automatically find and unzip the archive (and then read the first lines).
 
 
 v2 2022.08.04
