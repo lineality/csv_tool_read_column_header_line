@@ -26,8 +26,8 @@ should not require any additional environments,
 libraries, packages or set up. Just run in a folder 
 along with the .csv files.
 
-This method should work for larger files 
-(hundreds of megs or a few gigs in size)  
+This method should work for larger files, 
+(from hundreds of Megabytes (MB) or a few Gigabytes (GB) in size)  
 on any computer or device where you can run 
 a python script.
 
