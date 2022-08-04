@@ -10,6 +10,8 @@ This should work for even big files on any computer
 where you can run a python script. no env or package
 installs should be needed
 
+if .csv files are in a zipped archive, the function will
+automatically find and unzip the archive and then handle each file.
 
 v2 2022.08.04
 """
@@ -84,4 +86,3 @@ print_file_first_lines()
 #####################
 execution_time = time.time() - start_time
 print('Execution time:', time.strftime("%H:%M:%S", time.gmtime(execution_time)))
-
