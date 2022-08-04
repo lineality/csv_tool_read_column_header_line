@@ -31,7 +31,7 @@ This method should work for larger files
 on any computer or device where you can run 
 a python script.
 
-## Zipped Archived Handled
+## Zipped Archives Handled
 if .csv files are in a zipped archive, the function will
 automatically find and unzip the archive and then handle each file.
 
