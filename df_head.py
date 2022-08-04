@@ -72,9 +72,9 @@ def check_for_zip_files():
 # helper function get lines version 2
 def read_first_line(this_file):
     with open( this_file ) as f:
-        firstline = f.readlines()[0].rstrip()
+        first_line = f.readlines()[0].rstrip()
         
-    return firstline
+    return first_line
 
 # get files, get lines
 def print_file_first_lines():
